@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+nav {
+    float: left;
+    width: 20%; /* Adjust the width as needed */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+}
+
+tr {
+    border: 1px solid #ccc; /* Add a border for each row */
+}
+
+td {
+    padding: 10px; /* Add some padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Change link color */
+}
+
+a:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
