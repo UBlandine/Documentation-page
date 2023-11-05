@@ -1,38 +1,292 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
-    display: flex;
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: #4d4e53;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*-------------nav part----------------*/
+
 nav {
-    float: left;
-    width: 20%; /* Adjust the width as needed */
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+
+
 }
 
 table {
     border-collapse: collapse;
+    text-align: center;
+
+
 }
 
-h1 {
+.doc {
     text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+
 }
 
 tr {
-    border: 1px solid #ccc; /* Add a border for each row */
+    border: 1px solid #2a2727;
+    border-right: none;
 }
 
 td {
-    padding: 10px; /* Add some padding for better spacing */
-    text-align: left; /* Align text to the left */
+    padding: 10px;
+    text-align: left;
+    height: 35px;
+    width: 300px;
+    font-size: 17px;
+    padding-left: 10%;
+}
+
+#fin {
+    margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #333; /* Change link color */
+    color: #5c5b5b;
+    /* Change link color */
 }
 
 a:hover {
-    background-color: #f0f0f0; /* Change background color on hover */
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+}
+
+.full {
+    margin-left: 22%;
+}
+
+
+/*----------starting intro-------------*/
+
+.intro h1 {
+    padding: 20px 0;
+    font-size: 30px;
+
+
+}
+
+.intro p {
+    margin-left: 2%;
+    font-size: 17px;
+    color: #4d4e53;
+}
+
+.intro li {
+    margin-left: 7%;
+    font-size: 17px;
+    color: #4d4e53;
+}
+
+/*------------Main section--------------------*/
+
+.main-section p {
+    font-size: 17px;
+    margin-left: 1.5%;
+    color: #4d4e53;
+    word-spacing: 2;
+    font-family: 'Open Sans', Arial, sans-serif;
+
+
+}
+
+.main-section h1 {
+    font-size: 30px;
+    color: #4d4e53;
+}
+
+.main-section li {
+    font-size: 17px;
+    margin-left: 7%;
+    font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+/*------------Hello world section--------------------*/
+#hello code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 3%;
+    font-size: 13px;
+}
+
+
+/*------------variable section styles---------*/
+#variable p {
+    margin-left: 0;
+}
+
+/*----------------------declaration of variables part----------------*/
+#declaring code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 2.5;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 3%;
+    font-size: 13px;
+
+}
+
+/*---------part of variable scope style--------------------------------*/
+#variable-scope code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/*----------constant-------------------*/
+#constants code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 13px;
+
+}
+
+/*----------data types-------------*/
+#data-type li {
+    display: list-item;
+}
+
+#data-type ul li {
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
+/*--------if statement--------------------------*/
+#if code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/*----while statement-------------------------------*/
+#while code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/*-------function declaration --------*/
+#function code {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+li {
+    color: #4d4e53;
+    font-size: 10px;
+    display: list-item;
+    margin: 15px 0px 0px 20px;
+    text-align: -webkit-match-parent;
+}
+
+/*-------footer part------*/
+footer {
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+footer li {
+    margin-left: 5%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+    font-size: 16px;
+
+}
+
+footer a {
+    color: rgb(61, 61, 226);
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+
 }
